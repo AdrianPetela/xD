@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ustalanie spotkania</title>
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div class="clock-div">
+                <button class="toggle">Tryb ciemny</button>
+                <div class="clock-container">
+                    <div class="clock">
+                        <div class="needle hour"></div>
+                        <div class="needle minute"></div>
+                        <div class="needle second"></div>
+                        <div class="center-point"></div>
+                    </div>
+                    <div class="time"></div>
+                    <div class="date"></div>
+                </div>
+            </div>
+            <p class="message pb-4">
+                O której godzinie chcesz się ze mną spotkać?
+            </p>
+            <div class="inline-flex text-lg border rounded-md shadow-lg p-5">
+                <select
+                    name=""
+                    id="select-hour"
+                    class="px-2 outline-none appearance-none bg-transparent"
+                >
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+                <span class="px-2">:</span>
+                <select
+                    name=""
+                    id="input-minutes"
+                    class="px-2 outline-none appearance-none bg-transparent"
+                >
+                    <option value="00">00</option>
+                    <option value="30">30</option>
+                </select>
+            </div>
+            <button id="button" class="button">Potwierdź godzinę !</button>
+        </div>
+
+        <div id="content" class="content hidden">
+            <p id="message" class="message"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
