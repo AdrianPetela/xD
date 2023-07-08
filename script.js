@@ -9,7 +9,7 @@ button.addEventListener("click", function () {
     container.classList.add("hidden");
     content.classList.remove("hidden");
 
-    message.innerHTML = `Chcę się spotkać o <b>${input_hour}:${input_minutes}</b> <br> (uzgodnione z kim trzeba) <br>  jeśli ktokolwiek ma sprawy niecierpiące zwłoki a skierowane do mnie, zapraszam przed tą godziną <br> Petela Adrian:)`;
+    message.innerHTML = `Chcę się spotkać o <b>${input_hour}:${input_minutes}</b> <br> (uzgodnione z kim trzeba) <br> zapraszam przed tą godziną <br> Petela Adrian:)`;
 });
 
 const hourElement = document.querySelector(".hour");
